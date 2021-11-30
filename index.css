@@ -34,11 +34,6 @@
     box-sizing: content-box;
 }
 
-/* #nana_grid .heading {
-    
-    
-} */
-
 #nana_grid .title {
     display: inline-block;
     font-family: Muller;
@@ -83,10 +78,6 @@
     color: white;
 }
 
-#nana_grid .command {
-
-}
-
 #nana_grid .command__title {
     font-weight: bold;
     font-size: 30px;
@@ -105,6 +96,12 @@
 #nana_grid .card {
     background-color: white;
     max-width: 330px;
+    transition: linear 0.2s;
+}
+
+#nana_grid .card:hover {
+    box-shadow: 3px 4px 31px rgba(238, 114, 33, 0.21);
+    transition: linear 0.2s;
 }
 
 #nana_grid  .card__image {
