@@ -1,0 +1,167 @@
+@font-face {
+    src: url(/fonts/MullerBold.woff) format('woff'),
+    url(/fonts/MullerBold.woff2) format('woff2');
+    font-family: 'Muller';
+    font-weight: 900;
+}
+
+@font-face {
+    src: url(/fonts/MullerMedium.woff) format('woff'),
+    url(/fonts/MullerMedium.woff2) format('woff2');
+    font-family: 'Muller';
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(/fonts/MullerRegular.woff) format('woff'),
+    url(/fonts/MullerRegular.woff2) format('woff2');
+    font-family: 'Muller';
+    font-weight: 500;
+}
+
+.root {
+    background-image: url(https://ottokar39.ru/wp-content/themes/ABVV_Ottocar/img/xfon.png.pagespeed.ic.OwC12M-_P2.webp);
+    position: relative;
+}
+
+#nana_grid {
+    
+    max-width: 1140x;
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: "Muller", Arial, Helvetica, sans-serif;
+    padding: 0 60px;
+    box-sizing: content-box;
+}
+
+/* #nana_grid .heading {
+    
+    
+} */
+
+#nana_grid .title {
+    display: inline-block;
+    font-family: Muller;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #191713;
+    padding: 10px 20px;
+    margin: 0 0 0 -20px;
+
+}
+
+#nana_grid .tabs {
+    display: flex;
+    margin-top: 62px;
+}
+
+#nana_grid .tab {
+    padding: 12px 21px;
+    border-radius: 0px;
+    border: 2px solid #EE7221;
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: -2px;
+    font-family: Muller;
+    font-size: 22px;
+    line-height: 23px;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+#nana_grid .tab:hover {
+    background-color:#EE7221;
+    color: white;
+    transition: linear 0.2s;
+}
+
+#nana_grid .tab_active {
+    background-color:#EE7221;
+    color: white;
+}
+
+#nana_grid .command {
+
+}
+
+#nana_grid .command__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 90px 0 0 0;
+}
+
+#nana_grid .cards {
+    display: flex;
+    margin: 60px auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#nana_grid .card {
+    background-color: white;
+    max-width: 330px;
+}
+
+#nana_grid  .card__image {
+    width: 100%;
+}
+
+#nana_grid  .card__info {
+    background-color: white;
+    padding: 20px 20px 29px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+#nana_grid .card__title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 20px;
+    margin: 0;
+}
+
+#nana_grid .card__description{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    color: #4F4F4F;
+    margin: 0;
+}
+
+#nana_grid .card__phone {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 19px;
+    color: #EE7221;
+    text-decoration: none;
+}
+
+#nana_grid .card__mail {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(79, 79, 79, 0.5);
+}
+
+#nana_grid .card__btn {
+    margin-top: 22px;
+    height: 46px;
+    background: #EE7221;
+    font-size: 13.4px;
+    line-height: 13px;
+    color: white;
+    border: none;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+
+#nana_grid .card__btn:hover {
+    text-decoration: underline;
+    transition: linear 0.2s;
+}
