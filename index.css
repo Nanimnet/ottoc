@@ -29,8 +29,20 @@
     min-width: 320px;
     margin: 0 auto;
     font-family: "Muller", Arial, Helvetica, sans-serif;
-    padding: 0 60px;
+    padding: 0 0 0 60px;
     box-sizing: content-box;
+}
+
+@media only screen and (max-width: 740px) {
+    #nana_grid {
+        padding: 0 0 0 40px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid {
+        padding: 0 15px;
+    }
 }
 
 #nana_grid .title {
@@ -43,13 +55,34 @@
     text-transform: uppercase;
     border-bottom: 1px solid #191713;
     padding: 10px 20px;
-    margin: 0 0 0 -20px;
+    margin: 90px 0 0 -20px;
+}
 
+@media only screen and (max-width: 620px) {
+    #nana_grid .title {
+        font-size: 24px;
+        line-height: 26px;
+        padding: 7px 10px;
+        margin: 50px 0 0 -10px;
+    }
 }
 
 #nana_grid .tabs {
     display: flex;
     margin-top: 62px;
+    overflow-x: scroll;
+}
+
+@media only screen and (max-width: 740px) {
+    #nana_grid .tabs {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .tabs {
+        margin-top: 30px;
+    }
 }
 
 #nana_grid .tab {
@@ -64,6 +97,21 @@
     letter-spacing: -0.7px;
     cursor: pointer;
     transition: linear 0.2s;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1230px) {
+    #nana_grid .tab {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .tab {
+        padding: 7px 15px;
+        font-size: 16px;
+    }
 }
 
 #nana_grid .tab:hover {
@@ -85,6 +133,30 @@
     margin: 90px 0 0 0;
 }
 
+@media only screen and (max-width: 740px) {
+    #nana_grid .command__title {
+        margin: 60px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .command__title {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 30px 0 0 0;
+    }
+}
+
+#nana_grid  .main {
+    margin-bottom: 120px;
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .main {
+        margin-bottom: 50px;
+    }
+}
+
 #nana_grid .cards {
     display: flex;
     margin: 60px auto;
@@ -92,10 +164,31 @@
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 620px) {
+    #nana_grid .cards {
+        margin: 30px auto;
+        gap: 10px;
+    }
+}
+
 #nana_grid .card {
     background-color: white;
-    max-width: 330px;
+    max-width: 300px;
     transition: linear 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 740px) {
+    #nana_grid .card {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .card {
+        max-width: 140px;
+    }
 }
 
 #nana_grid .card:hover {
@@ -109,10 +202,19 @@
 
 #nana_grid  .card__info {
     background-color: white;
-    padding: 20px 20px 29px;
+    padding: 20px 20px 0;
     display: flex;
     gap: 12px;
     flex-direction: column;
+    min-height: 120px;
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .card__info {
+        padding: 10px 10px 0;
+        gap: 4px;
+        min-height: 62px;
+    }
 }
 
 #nana_grid .card__title {
@@ -120,6 +222,13 @@
     font-size: 26px;
     line-height: 20px;
     margin: 0;
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .card__title {
+        font-size: 16px;
+        line-height: 17px;
+    }
 }
 
 #nana_grid .card__description{
@@ -130,6 +239,13 @@
     margin: 0;
 }
 
+@media only screen and (max-width: 620px) {
+    #nana_grid .card__description {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
 #nana_grid .card__phone {
     font-weight: 900;
     font-size: 18px;
@@ -138,15 +254,30 @@
     text-decoration: none;
 }
 
+@media only screen and (max-width: 620px) {
+    #nana_grid .card__phone {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
 #nana_grid .card__mail {
     font-weight: normal;
     font-size: 14px;
     line-height: 15px;
     color: rgba(79, 79, 79, 0.5);
+    flex: 1;
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .card__mail {
+        font-size: 10px;
+        line-height: 15px;
+    }
 }
 
 #nana_grid .card__btn {
-    margin-top: 22px;
+    margin: 22px 20px 29px;
     height: 46px;
     background: #EE7221;
     font-size: 13.4px;
@@ -155,6 +286,15 @@
     border: none;
     transition: linear 0.2s;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 620px) {
+    #nana_grid .card__btn{
+        font-size: 13.44px;
+        line-height: 13.44px;
+        margin: 15px 10px 10px;
+        height: 36px;
+    }
 }
 
 #nana_grid .card__btn:hover {
