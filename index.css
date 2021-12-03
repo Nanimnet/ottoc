@@ -143,7 +143,7 @@
     #nana_grid .command__title {
         font-size: 20px;
         line-height: 20px;
-        margin: 30px 0 0 0;
+        margin: 40px 0 0 0;
     }
 }
 
@@ -162,12 +162,16 @@
     margin: 60px auto;
     gap: 30px;
     flex-wrap: wrap;
+    
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 710px) {
     #nana_grid .cards {
         margin: 30px auto;
-        gap: 10px;
+        column-gap: 10px;
+        row-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -179,17 +183,7 @@
     flex-direction: column;
 }
 
-@media only screen and (max-width: 740px) {
-    #nana_grid .card {
-        max-width: 250px;
-    }
-}
 
-@media only screen and (max-width: 620px) {
-    #nana_grid .card {
-        max-width: 140px;
-    }
-}
 
 #nana_grid .card:hover {
     box-shadow: 3px 4px 31px rgba(238, 114, 33, 0.21);
@@ -207,6 +201,7 @@
     gap: 12px;
     flex-direction: column;
     min-height: 120px;
+    margin-bottom: 22px;
 }
 
 @media only screen and (max-width: 620px) {
@@ -214,6 +209,7 @@
         padding: 10px 10px 0;
         gap: 4px;
         min-height: 62px;
+        margin-bottom: 13px;
     }
 }
 
@@ -277,7 +273,7 @@
 }
 
 #nana_grid .card__btn {
-    margin: 22px 20px 29px;
+    /* margin: 22px 20px 29px; */
     height: 46px;
     background: #EE7221;
     font-size: 13.4px;
@@ -286,14 +282,21 @@
     border: none;
     transition: linear 0.2s;
     cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 29px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media only screen and (max-width: 620px) {
     #nana_grid .card__btn{
         font-size: 13.44px;
         line-height: 13.44px;
-        margin: 15px 10px 10px;
+        /* margin: 15px 10px 10px; */
         height: 36px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
