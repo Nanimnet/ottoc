@@ -136,27 +136,31 @@
   display: none;
   }
   
-  #nana_grid #tab-btn-1:checked~#comand-all,
+  #nana_grid #tab-btn-1:checked~#content-1,
   #nana_grid #tab-btn-2:checked~#content-1,
-  #nana_grid #tab-btn-3:checked~#content-2 {
+  #nana_grid #tab-btn-3:checked~#content-2,
+  #nana_grid #tab-btn-4:checked~#content-3,
+  #nana_grid #tab-btn-5:checked~#content-4,
+  #nana_grid #tab-btn-6:checked~#content-5,
+  #nana_grid #tab-btn-7:checked~#content-6 {
   display: block;
   }
   
   #nana_grid .tabs>label {
-    word-wrap: none;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   user-select: none;
   background-color: rgba(238, 238, 238, 0);
   padding: 7px 15px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   border: #EE7221 solid 2px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  margin-right: 6px;
+  margin-right: -3.9px;
   cursor: pointer;
   margin-bottom: 10px;
+  white-space: nowrap;
   }
   
   #nana_grid .tabs>label:first-of-type {
