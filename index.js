@@ -1,16 +1,32 @@
 const cardBtn = document.querySelector(".card__btn");
 const closeBtn = document.querySelector(".popup-review__close");
-const popup = document.querySelector(".popup");
+const modal = document.querySelector(".popup");
 
-function openPopup() {
-    popup.classList.add("popup_is-opened");
+function popup() {
+    modal.classList.toggle("popup_is-opened");
 }
 
-function closePopup() {
-    popup.classList.remove("popup_is-opened");
+
+cardBtn.addEventListener("click", popup);
+
+closeBtn.addEventListener("click", popup);
+
+
+function filerSelection(evt, commandName) {
+
+ var i, tabcontent, tablinks;
+
+ tabcontent = document.getElementsByClassName("command");
+ for (i = 0; i < tabcontent.length; i++) {
+     tabcontent[i].style.display = "none";
+ }
+
+ tablinks = document.getElementsByClassName("tab");
+ for (i = 0; i < tablinks.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" active", "");
+ }
+
+ document.getElementById(commandName).style.display = "block";
+ evt.currentTarget.className += " active";
 }
-
-cardBtn.addEventListener("click", openPopup);
-
-closeBtn.addEventListener("click", closePopup);
 

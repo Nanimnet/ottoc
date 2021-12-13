@@ -67,7 +67,7 @@
   }
 }
 
-/* #nana_grid .tabs {
+#nana_grid .tabs {
   display: flex;
   margin-top: 62px;
   overflow-x: scroll;
@@ -86,25 +86,18 @@
 }
 
 #nana_grid .tab {
-  padding: 12px 21px;
+  padding: 7px 13px;
   border-radius: 0px;
   border: 2px solid #ee7221;
   background-color: rgba(255, 255, 255, 0);
   margin-right: -2px;
   font-family: Muller;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 23px;
   letter-spacing: -0.7px;
   cursor: pointer;
   transition: linear 0.2s;
   white-space: nowrap;
-}
-
-@media only screen and (max-width: 1230px) {
-  #nana_grid .tab {
-    font-size: 18px;
-    line-height: 20px;
-  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -118,54 +111,14 @@
   background-color: #ee7221;
   color: white;
   transition: linear 0.2s;
-} */
-
-#nana_grid .tabs {
-  margin-top: 60px;
 }
 
-#nana_grid .tabs>input[type="radio"] {
-  display: none;
-  }
-  
-  #nana_grid .tabs>input[type="radio"]:checked+label {
+#nana_grid .active {
   background-color: #ee7221;
-  }
-  
-  #nana_grid .tabs>div {
-  display: none;
-  }
-  
-  #nana_grid #tab-btn-1:checked~#content-1,
-  #nana_grid #tab-btn-2:checked~#content-1,
-  #nana_grid #tab-btn-3:checked~#content-2,
-  #nana_grid #tab-btn-4:checked~#content-3,
-  #nana_grid #tab-btn-5:checked~#content-4,
-  #nana_grid #tab-btn-6:checked~#content-5,
-  #nana_grid #tab-btn-7:checked~#content-6 {
-  display: block;
-  }
-  
-  #nana_grid .tabs>label {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: rgba(238, 238, 238, 0);
-  padding: 7px 15px;
-  font-size: 16px;
-  line-height: 1.5;
-  border: #EE7221 solid 2px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  margin-right: -3.9px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  white-space: nowrap;
-  }
-  
-  #nana_grid .tabs>label:first-of-type {
-  margin-left: 0; 
-  }
+  color: white;
+  transition: linear 0.2s;
+}
+
 
 #nana_grid .tab_active {
   background-color: #ee7221;
