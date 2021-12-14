@@ -98,6 +98,7 @@
   cursor: pointer;
   transition: linear 0.2s;
   white-space: nowrap;
+  color: #fff;
 }
 
 @media only screen and (max-width: 620px) {
