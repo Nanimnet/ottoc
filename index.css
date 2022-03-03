@@ -20,7 +20,7 @@
 }
 
 .root {
-  background-image: url(/images/fon\ 1.jpg);
+  background-image: url(https://i.ibb.co/9hpxLkh/fon.jpg);
   position: relative;
 }
 
@@ -189,6 +189,26 @@
 
 #nana_grid .card__image {
   width: 100%;
+  max-height: 300px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 660px) {
+  #nana_grid .card__image {
+    max-height: 285px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #nana_grid .card__image {
+    max-height: 180px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #nana_grid .card__image {
+    max-height: 145px;
+  }
 }
 
 #nana_grid .card__info {
