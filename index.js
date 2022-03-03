@@ -26,7 +26,14 @@ function filerSelection(evt, commandName) {
      tablinks[i].className = tablinks[i].className.replace(" active", "");
  }
 
- document.getElementById(commandName).style.display = "block";
+ if(commandName) {
+    document.getElementById(commandName).style.display = "block";
+ } else {
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "block";
+    }
+ }
+
  evt.currentTarget.className += " active";
 }
 
